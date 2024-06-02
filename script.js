@@ -1,5 +1,5 @@
 document.getElementById('scrape-button').addEventListener('click', async () => {
-    const response = await fetch('http://localhost:3000/run-scrape');
+    const response = await fetch('https://backend-gamma-blue.vercel.app/run-scrape');
     const data = await response.json();
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
